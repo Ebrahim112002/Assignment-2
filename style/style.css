@@ -3,8 +3,12 @@
     font-family: Quicksand;
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
 
+}
+body{
+    /* overflow: hidden; */
+}
 /* nav sec style */
 header{
 
@@ -90,6 +94,7 @@ font-weight: 400;
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
     .nav-logo h2{
         display: none;
@@ -118,14 +123,15 @@ header{
         box-sizing: border-box;
        border: 0.5px solid rgb(254, 163, 1);
        margin-top: 12px;
-       margin-bottom: 5px;
+       margin-bottom: 10px;
+       width: auto;
     }
 }
 
 /* banner sec styles */
 .banner{
  
-    background-color: aqua;
+   
     width:100%;
     max-width:1300px;
     margin: 0 auto;
@@ -134,10 +140,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 70px;
 }
 .banner-cnt{
     width: 640px;
    height: 331px;
+   
 
 }
 .banner-cnt h1{
@@ -146,6 +154,14 @@ font-weight: 700;
 line-height: 61px;
 margin-bottom: 24px;
 }
+.emp{
+    color: rgb(254, 163, 1);
+    
+}
+.vision{
+    color: rgb(1, 172, 253);
+}
+
 .banner-cnt p{
     color: rgb(17, 17, 17);
 font-size: 20px;
@@ -164,6 +180,48 @@ font-weight: 700;
 border: none;
 }
 .banner-img{
-    width: 468.61px;
+    width: 100%px;
     height: 575px;
+}
+
+/* responsive for banner */
+@media screen and (max-width:576px) {
+ .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .banner-cnt {
+
+        width: 100%;
+    }
+
+    .banner-cnt h1 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 18px;
+    }
+
+    .banner-cnt p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .banner-cnt button {
+        width: 100%;
+        max-width: 200px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .banner-img{
+        margin-top: 100px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
 }
