@@ -443,6 +443,7 @@ align-items: center;
 font-size: 46px;
 font-weight: 700;
 line-height: 57.5px;
+margin-bottom: 100px;
 }
 .str-cars1{
     width: 540.27px;
@@ -459,13 +460,14 @@ border-radius: 16px 16px 0px 0px;
 
 }
 .str-cars1 button{
+    position: relative;
     width: 174.51px;
 height: 47.93px;
 border: none;
-    border-radius: 47.93px;
+ border-radius: 47.93px;
 background: rgb(60, 216, 232);
 margin-left: 38px;
-margin-top: -1000px;
+margin-top: -100px;
 margin-bottom: 38px;
 color: rgb(255, 255, 255);
 font-family: Raleway;
@@ -493,4 +495,117 @@ font-size: 15.34px;
 font-weight: 500;
 line-height: 28.76px;
 margin-bottom: 34px;
+}
+.str-card{
+    display: flex;
+    gap:20px;
+}
+.card-grid{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-sizing: border-box; 
+    max-width: 100%;
+}
+
+.str-card2{
+    width: 100%;
+    max-width: 290.69px; 
+    height: 330px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.card2img{
+    width: 291px;
+height: 177px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(../assets/story-2.png),rgb(255, 255, 255);
+}
+.str-card2 button{
+    border-radius: none;
+    width: 174.51px;
+    border: none;
+height: 38.35px;
+margin-left: 38px;
+margin-top: -800px;
+    border-radius: 47.93px;
+background: rgb(149, 178, 38);
+margin-bottom: 28px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+text-transform: capitalize;
+}
+.str-card2 h2{
+    width: 198.04px;
+    height: 47.93px;
+font-size: 15.34px;
+font-weight: 700;
+line-height: 28.76px;
+margin-left: 38px;
+}
+.card2img2{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(../assets/story-3.png),rgb(255, 255, 255);
+}
+#bnt2{
+background: rgb(93, 88, 240);
+}
+.card2img3{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(../assets/story-4.png),rgb(255, 255, 255);
+}
+.card2img4{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+    background: url(../assets/story-5.png),rgb(255, 255, 255);
+}
+#btn4{
+    width: 127.44px;
+height: 38.35px;
+}
+.str-btn{
+    width: 197px;
+height: 50px;
+padding: 10px;
+border-radius: 12px;
+background: rgb(17, 17, 17);
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+margin-top: 90px;
+}
+
+/* responsive for stories */
+@media screen and (max-width: 576px) {
+    .stories{
+        width: 100%;
+    }
+    .str-cars1{
+        display: none;
+    }
+    .stories h2{
+      margin-top: 0px;
+    }
+    .card-grid{
+        
+        width: 100%;
+    }
+    .str-card2{
+        width: 173.09px;
+height: 179.59px;
+    }
+    .card2img, .card2img2, .card2img3, .card2img4 {
+        width: 173.27px;
+height: 105.39px;
+    }
 }
