@@ -498,7 +498,7 @@ align-items: center;
 }
 .str-card2 {
     width: 290px;
-    height: 330px;
+    height: 295px;
     border-radius: 16px;
     background: #fff;
     position: relative;
@@ -599,8 +599,8 @@ height: 38.35px;
         border-radius: 12px;
         background: #fff;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: left;
+
     }
     .card2img, .card2img2, .card2img3, .card2img4 {
         width: 100%;
@@ -648,18 +648,107 @@ height: 38.35px;
 
 /* footer sec style */
 .ftr{
+    padding: 10px;
     width: 100%;
-   
-height: 519px;
+height: 51.9vh;
 background: rgb(1, 172, 253);
 display: flex;
 justify-content: center;
 align-items: center;
 }
+.ftr-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 173px;
+}
 .ftr-img{
     display: flex;
     align-items: center;
 }
+.ftr-cnt{
+    display: flex;
+    flex-direction: column;
+}
+.ftr-img {
+    margin-bottom: 36px;
+    gap: 20px;
+}
 .ftr-img img{
+    width: 83px;
+    height: 82px;
+}
+.ftr-img h2{
+    color: rgb(255, 255, 255);
+font-size: 2.3rem;
+font-weight: 700;
+line-height: 39.51px;
+}
+.ftr-p{
+    width: 399px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+}
+.ftr-abt h3{
+    color: rgb(255, 255, 255);
+font-size: 1.5rem;
+font-weight: 600;
+line-height: 30px;
+margin-bottom: 32px;
+}
+.ftr-abt ul li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 25px;
+margin-bottom: 20px;
+}
+.ftrlogo{
+    display: flex;
+    gap: 5px;
+}
+.ftrlogo img{
+    width: 40px;
+height: 40px;
+}
+.ftr-logo h4{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
 
+/* responsive for footer */
+@media screen and (max-width:576px) {
+    .ftr{
+        height: 745px;
+    }
+    .ftr-flex{
+        flex-direction: column;
+        gap: 32px;
+
+    }
+    .ftr-p{
+        width: 357px;
+        height: 80px;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    .ftr-img img{
+        width: 69px;
+        height: 69px;
+    }
+    .ftr-abt ul li{
+        margin-bottom: 10px;
+    }
+    .ftr-logo{
+        margin-bottom: 60px;
+    }
+    .ftr-flex{
+        margin-top: 65px;
+    }
 }
