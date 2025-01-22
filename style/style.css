@@ -121,6 +121,7 @@ header{
        margin-top: 12px;
        margin-bottom: 10px;
        width: auto;
+       width: 100%;
     }
 }
 
@@ -408,6 +409,7 @@ align-items: center;
         margin-top: 60px;
         height: auto; 
         padding: 20px; 
+        margin-bottom: 0;
     }
     
     .curicullumn h2 {
@@ -428,184 +430,236 @@ align-items: center;
 }
 
 /* stories sec style */
-.stories{
-    margin-top: 50px;
+.stories {
+    margin-top: 40px;
     width: 100%;
-height: 1018.02px;
-background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.stories h2{
-    color: rgb(0, 0, 0);
-font-size: 46px;
-font-weight: 700;
-line-height: 57.5px;
-margin-bottom: 100px;
-}
-.str-cars1{
-    width: 540.27px;
-height: 680px;
-border-radius: 16px;
-background: rgb(255, 255, 255);
-
-}
-.str-cars1 img{
-    width: 540px;
-height: 337px;
-border-radius: 16px 16px 0px 0px;
-
-
-}
-.str-cars1 button{
-    position: relative;
-    width: 174.51px;
-height: 47.93px;
-border: none;
- border-radius: 47.93px;
-background: rgb(60, 216, 232);
-margin-left: 38px;
-margin-top: -100px;
-margin-bottom: 38px;
-color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 14.34px;
-font-weight: 400;
-line-height: 28.76px;
-}
-.str-cars1 h2{
-    width: 402.49px;
-height: 69.98px;
-margin-left: 38px;
-    color: rgb(0, 0, 0);
-font-size: 24px;
-font-weight: 700;
-line-height: 38.35px;
-margin-bottom: 51px;
-}
-.str-cars1 p{
-    width: 433.06px;
-height: 75.74px;
-    margin-left: 38px;
-    color: rgb(102, 102, 102);
-font-family: Raleway;
-font-size: 15.34px;
-font-weight: 500;
-line-height: 28.76px;
-margin-bottom: 34px;
-}
-.str-card{
+    background-size: cover;
+    background: url(../assets/bg.png), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
     display: flex;
-    gap:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.card-grid{
-    margin-left: 20px;
+.stories h2 {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    margin-bottom: 50px;
+}
+.str-cars1 {
+    width: 540px;
+    height: 680px;
+    border-radius: 16px;
+    background: #fff;
+}
+.str-cars1 img {
+    width: 100%;
+    height: 337px;
+    border-radius: 16px 16px 0 0;
+}
+.str-cars1 button {
+    width: 175px;
+    height: 48px;
+    border: none;
+    border-radius: 48px;
+    background: #3CD8E8;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: -25px 0 38px 38px;
+}
+.str-cars1 h2 {
+    width: 400px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 38px 20px;
+}
+.str-cars1 p {
+    width: 430px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 38px 34px;
+    line-height: 1.5;
+}
+.str-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    box-sizing: border-box; 
-    max-width: 100%;
 }
-
-.str-card2{
-    width: 100%;
-    max-width: 290.69px; 
+.str-card2 {
+    width: 290px;
     height: 330px;
     border-radius: 16px;
-    background: rgb(255, 255, 255);
+    background: #fff;
+    position: relative;
 }
-.card2img{
-    width: 291px;
-height: 177px;
-    border-radius: 16px 16px 0px 0px;
-    background: url(../assets/story-2.png),rgb(255, 255, 255);
-}
-.str-card2 button{
-    border-radius: none;
-    width: 174.51px;
-    border: none;
-height: 38.35px;
-margin-left: 38px;
-margin-top: -800px;
-    border-radius: 47.93px;
-background: rgb(149, 178, 38);
-margin-bottom: 28px;
-color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 15.34px;
-font-weight: 500;
-line-height: 28.76px;
-text-transform: capitalize;
-}
-.str-card2 h2{
-    width: 198.04px;
-    height: 47.93px;
-font-size: 15.34px;
-font-weight: 700;
-line-height: 28.76px;
-margin-left: 38px;
-}
-.card2img2{
-    width: 291px;
+.card2img, .card2img2, .card2img3, .card2img4 {
+    width: 100%;
     height: 177px;
-    border-radius: 16px 16px 0px 0px;
-    background: url(../assets/story-3.png),rgb(255, 255, 255);
+    border-radius: 16px 16px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+.card2img { background: url(../assets/story-2.png); }
+.card2img2 { background: url(../assets/story-3.png); }
+.card2img3 { background: url(../assets/story-4.png); }
+.card2img4 { background: url(../assets/story-5.png); }
+.str-card2 button {
+    width: 175px;
+    height: 38px;
+    border: none;
+    border-radius: 48px;
+    background: #95B226;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 160px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+.str-card2 h2 {
+
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10%;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    width: 85%;
+}
+.str-btn {
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 #bnt2{
-background: rgb(93, 88, 240);
-}
-.card2img3{
-    width: 291px;
-    height: 177px;
-    border-radius: 16px 16px 0px 0px;
-    background: url(../assets/story-4.png),rgb(255, 255, 255);
-}
-.card2img4{
-    width: 291px;
-    height: 177px;
-    border-radius: 16px 16px 0px 0px;
-    background: url(../assets/story-5.png),rgb(255, 255, 255);
+     background: rgb(93, 88, 240);
 }
 #btn4{
     width: 127.44px;
 height: 38.35px;
 }
-.str-btn{
-    width: 197px;
-height: 50px;
-padding: 10px;
-border-radius: 12px;
-background: rgb(17, 17, 17);
-color: rgb(255, 255, 255);
-font-size: 20px;
-font-weight: 700;
-line-height: 30px;
-margin-top: 90px;
+.hide{
+    display: none;
 }
 
-/* responsive for stories */
+/* Responsive for stories */
+/* Responsive for stories */
 @media screen and (max-width: 576px) {
-    .stories{
+    .stories {
         width: 100%;
+        padding: 20px 10px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
     }
-    .str-cars1{
+    .stories h2 {
+        top: 20px;
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .str-cars1 {
         display: none;
     }
-    .stories h2{
-      margin-top: 0px;
+    .hide{
+        display: block;
     }
-    .card-grid{
-        
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2fr,1);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .str-card2 {
         width: 100%;
-    }
-    .str-card2{
-        width: 173.09px;
-height: 179.59px;
+        max-width: 250px;
+        border-radius: 12px;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
     }
     .card2img, .card2img2, .card2img3, .card2img4 {
-        width: 173.27px;
-height: 105.39px;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px 12px 0 0;
     }
+    .str-card2 button {
+        text-wrap: nowrap;
+        top: 120px;
+        display: block;
+        width: fit-content;
+        padding: 5px 15px;
+        margin: 10px auto 5px;
+        font-size: 10px;
+        color: #fff;
+        background: #95b226;
+        border: none;
+        border-radius: 16px;
+        text-align: center;
+    }
+    .str-card2 h2 {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px 10px 20px;
+        text-align: center;
+        line-height: 18px;
+       margin-top: 30px;
+    }
+    .str-btn {
+        width: 180px;
+        height: 45px;
+        margin: 30px auto 0;
+        font-size: 16px;
+        font-weight: bold;
+        background: #111;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 45px;
+    }
+}
+
+/* footer sec style */
+.ftr{
+    width: 100%;
+   
+height: 519px;
+background: rgb(1, 172, 253);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ftr-img{
+    display: flex;
+    align-items: center;
+}
+.ftr-img img{
+
 }
