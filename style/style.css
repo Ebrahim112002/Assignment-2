@@ -88,6 +88,15 @@ font-weight: 400;
 /* responsive for nav */
 @media screen  and (max-width:576px){
 header{
+    box-sizing: border-box;
+    border: 0.5px solid rgb(254, 163, 1); /* The border around the line */
+    margin-top: 12px;
+    margin-bottom: 30px;
+    width: 100%; /* Full width of its parent container */
+    height: 80px; /* Adjust height for the image container */
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,20 +124,47 @@ header{
         width: 40px;
         height: 40px;
     }
-    .line{
-        box-sizing: border-box;
-       border: 0.5px solid rgb(254, 163, 1);
-       margin-top: 12px;
-       margin-bottom: 10px;
-       width: auto;
-       width: 100%;
-    }
 }
-
+/* marque sec style */
+.marquee {
+    margin: 20px auto 0 auto;
+    width: 80%; 
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    padding: 10px 0;
+  }
+  
+  .marq-cnt {
+    display: inline-block;
+    text-wrap: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    animation: marquee 20s linear infinite;
+    padding-left: 100%;
+  }
+  
+  /* Keyframes to animate*/
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); 
+    }
+    25% {
+      transform: translateX(-50%); 
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
 /* banner sec styles */
 .banner{
- 
-   
     width:100%;
     max-width:1300px;
     margin: 0 auto;
@@ -449,7 +485,7 @@ align-items: center;
 }
 .str-cars1 {
     width: 540px;
-    height: 680px;
+    height: 630px;
     border-radius: 16px;
     background: #fff;
 }
@@ -549,6 +585,7 @@ align-items: center;
     font-weight: 700;
     margin-top: 60px;
     margin-bottom: 40px;
+    border: none;
 }
 #bnt2{
      background: rgb(93, 88, 240);
@@ -750,5 +787,6 @@ height: 40px;
     }
     .ftr-flex{
         margin-top: 65px;
+        margin-left: 10px;
     }
 }
